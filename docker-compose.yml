@@ -1,0 +1,15 @@
+services:
+  exemplo1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: exemplo-web-app:1.0
+    container_name: exemplo-1
+    ports: 
+      - "8080:80"
+
+  exemplo2:
+    image: exemplo-web-app:1.0
+    container_name: exemplo-2
+    ports:
+      - "8081:80"
